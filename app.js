@@ -2,7 +2,7 @@
 const express = require('express');
 require('dotenv').config();
 const app = express();
-const routes = require('./routes/directors'); 
+const routes = require('./routes/'); 
 
 console.log("Hello from Express");
 
