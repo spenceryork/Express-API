@@ -14,8 +14,8 @@ module.exports.getAllMovies = (req, res, next) => {
 module.exports.getAMovie = (req, res, next) => {
     let movieId = req.params.movieId;
     getAMovie(movieId)
-    .then( (movies) => {
-        res.status(200).json(movies);
+    .then( (movie) => {
+        res.status(200).json(movie);
     })
     .catch( (err) => {
         next(err);
